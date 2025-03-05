@@ -1,7 +1,12 @@
-use std::io; //  Biblioteca de entrada e saída
+use rand::Rng;
+use std::io; //  Biblioteca de entrada e saída // Biblioteca de números randomizados do crates.io
 
 fn main() {
     println!("Guess the number!");
+
+    let secret_number = rand::thread_rng().gen_range(1..=100);
+
+    println!("The secret number is: {secret_number}");
 
     println!("Please input your guess...");
 
@@ -18,5 +23,5 @@ fn main() {
 
     println!("You guessed: {}", guess);
 
-    // TODO: Terminar projeto
+    // TODO: Comparação entre números
 }
