@@ -17,4 +17,6 @@ fn main() {
     // Sem o expect, o compilador retornaria um erro alertando sobre uma possível exceção
 
     println!("You guessed: {}", guess);
+
+    // TODO: Terminar projeto
 }
